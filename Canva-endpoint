@@ -1,0 +1,10 @@
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const code = urlParams.get("code");
+
+  if (code) {
+      window.location.href = "https://yourdomain.com/process?code=" + code;
+  } else {
+      document.write("Authorization failed.");
+  }
+</script>
